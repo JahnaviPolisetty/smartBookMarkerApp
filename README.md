@@ -61,7 +61,7 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_publishable_key
 
 ## 🌐 Live Demo
 
-🔗 Vercel Deployment: 
+🔗 Vercel Deployment: https://smart-book-marker-app-nywy.vercel.app/
 
 ---
 
