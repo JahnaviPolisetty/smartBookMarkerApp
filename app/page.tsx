@@ -100,6 +100,14 @@ const copyLink = (link) => {
   alert("Copied!");
 };
 
+const channel = supabase
+  .channel("bookmarks")
+  .on(
+    "postgres_changes",
+    { event: "*", schema: "public", table: "bookmarks" },
+    () => fetchBookmarks()   // ✅ fixed
+  )
+  .subscribe();
 
   if (!user) {
     return (
